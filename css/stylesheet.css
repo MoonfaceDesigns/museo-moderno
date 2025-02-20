@@ -87,9 +87,9 @@ body {
 /* Sections */
 section {
     height: 100vh;
-    display: flex;
+    /* display: flex; 
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     text-align: center;
     font-size: 24px;
     color: #fff;
@@ -99,11 +99,21 @@ section {
 
 #about {
     background-color: #EAE8EB;
+    margin-top: 70px;
+}
+
+#row1 {
     display: grid;
     grid-template-columns: 3fr 4fr;
-    grid-template-rows: 400px 30px;
-    column-gap: 30px;
-    margin-top: 70px;
+    grid-template-rows: 400px 20px;
+    column-gap: 20px;
+}
+
+#row2 {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 400px 20px;
+    column-gap: 20px;
 }
 
 .left_box {
@@ -111,7 +121,7 @@ section {
     font-size: 400px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 400px;
 }
 
 .right_box {
