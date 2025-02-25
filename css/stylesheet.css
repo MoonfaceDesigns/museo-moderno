@@ -105,7 +105,7 @@ section {
 #row1 {
     display: grid;
     grid-template-columns: 3fr 4fr;
-    grid-template-rows: 400px 20px;
+    grid-template-rows: auto 20px;
     column-gap: 20px;
 }
 
@@ -120,7 +120,7 @@ section {
 }
 
 .right_box {
-    height: 400px;
+    /* height: 400px; */
     flex-shrink: 0;
     border-radius: 40px 0px 0px 40px;
     background: #01A0E2;
@@ -152,12 +152,12 @@ h1 {
 #row2 {
     display: grid;
     grid-template-columns: 4fr 3fr;
-    grid-template-rows: 320px 20px;
+    grid-template-rows: auto 20px;
     column-gap: 20px;
 }
 
 .left_box2 {
-    height: 320px;
+    /* height: 320px; */
     flex-shrink: 0;
     border-radius: 0px 40px 40px 0px;
     background: #D9416F;
