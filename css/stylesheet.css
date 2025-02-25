@@ -92,7 +92,7 @@ section {
     align-items: center; */
     text-align: left;
     font-size: 24px;
-    color: #fff;
+    color: #EAE8EB;
 }
 
 /* About */
@@ -125,7 +125,7 @@ section {
     border-radius: 40px 0px 0px 40px;
     background: #01A0E2;
     padding: 55px 40px;
-    color: #FFF;
+    color: #EAE8EB;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -172,7 +172,7 @@ h1 {
 }
 
 h2 {
-    color: #FFF;
+    color: #EAE8EB;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
