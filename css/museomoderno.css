@@ -88,3 +88,8 @@
     font-style: normal;
     font-weight: 900;
 }
+@font-face {
+    font-family: 'MuseoModerno';
+    src: url('fonts/MuseoModerno/MuseoModerno-VariableFont_wght.ttf');
+    font-style: normal;
+}
