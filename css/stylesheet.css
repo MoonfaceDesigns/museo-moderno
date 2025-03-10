@@ -242,9 +242,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-
-.right_box2 {
+.stat_box {
     background: #EAE8EB;
+}
+
+.right_box2, .stat_box {
     text-align: center;
     flex-shrink: 0;
     border-radius: 40px;
@@ -255,7 +257,7 @@ h2 {
     font-weight: 500;
 }
 
-.right_box2 h2 {
+.right_box2 h2, .stat_box h2 {
     font-size: 96px;
     color:#D9416F;
     line-height: 72px;
@@ -297,6 +299,12 @@ h2 {
     width: 500px;
     padding-left: 10px;
     border-left: 13px solid #D9416F;
+}
+
+/* GLYPHS */
+#glyphs {
+    background-color: #333;
+    padding-top: 20px;
 }
 
 /* Footer */
