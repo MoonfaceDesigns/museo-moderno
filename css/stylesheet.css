@@ -258,7 +258,7 @@ h2 {
 
 #row3 {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 0px;
     column-gap: 20px;
     padding: 40px 55px;
