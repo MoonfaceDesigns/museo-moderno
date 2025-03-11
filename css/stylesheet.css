@@ -19,15 +19,21 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    left: 40px;
-    right: 40px;
     background: #EAE8EB;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar_content {
+    margin-left: 40px;
+    margin-right: 40px;
     border-bottom: 4px solid #01A0E2;
     color: #01A0E2;
     padding: 20px 0 4px 0;
     text-align: center;
     font-size: 24px;
-    z-index: 1000;
 }
 
 .navbar ul {
@@ -99,7 +105,7 @@ section {
 
 #about {
     background-color: #EAE8EB;
-    margin-top: 70px;
+    margin-top: 120px;
 }
 
 #row1 {
@@ -182,9 +188,27 @@ section {
 .right_box p {
     margin-top: 30px;
     margin-left: 5px;
-    width: 500px;
+    /* width: 500px; */
     padding-left: 10px;
     border-left: 13px solid #D9416F;
+}
+
+.buttons {
+    background-color: #D9416F;
+    float: left;
+    border: 0;
+    width: 220px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    color:#EAE8EB;
+    text-decoration: underline;
+}
+
+.buttons:hover {
+    background-color: #333;
+    color:#D9416F;
 }
 
 h1 {
@@ -237,13 +261,28 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 0px;
     column-gap: 20px;
-    padding: 60px 55px;
+    padding: 40px 55px;
+    background: #333;
+    margin-bottom: 0px;
+}
+
+#row4 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 0px;
+    column-gap: 20px;
+    padding: 40px 55px;
     background: #333;
     margin-bottom: 20px;
 }
 
 .stat_box {
     background: #EAE8EB;
+}
+
+#row4 .stat_box h2 {
+    font-size: 48px;
+    line-height: 40px;
 }
 
 .right_box2, .stat_box {
@@ -269,16 +308,79 @@ h2 {
     margin-top: 10px;
 }
 
+#row5 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 0px;
+    column-gap: 20px;
+    padding: 20px 40px;
+}
+
+.weight_box {
+    text-align: center;
+    flex-shrink: 0;
+    color: #01A0E2;
+    font-style: normal;
+}
+
+.weight_box2 {
+    text-align: center;
+    flex-shrink: 0;
+    color: #D9416F;
+    font-size: 24px;
+    -moz-font-feature-settings:"ss01" 1;
+    -ms-font-feature-settings:"ss01" 1;
+    -o-font-feature-settings:"ss01" 1;
+    -webkit-font-feature-settings:"ss01" 1;
+    font-feature-settings:"ss01" 1;
+}
+
+h3 {
+    color: #EAE8EB;
+    font-size: 96px;
+    font-weight: normal;
+    line-height: 72px; /* 75% */
+}
+
 /* GLYPHS */
 .left_box3 {
-    color: #333;
-    font-size: 4.5vw;
+    color: #EAE8EB;
+    font-size: 36px;
     line-height: 80%;
     font-style: normal;
     font-weight: 400;
-    text-align: center;
     margin-left: 40px;
+    position: relative;
 }
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #D9416F;
+    color:#EAE8EB;
+  }
 
 .right_box3 {
     /* height: 400px; */
@@ -287,24 +389,46 @@ h2 {
     background: #01A0E2;
     padding: 55px 40px;
     color: #EAE8EB;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 36px; /* 128.571% */
 }
 
 .right_box3 p {
     margin-top: 30px;
-    margin-left: 5px;
-    width: 500px;
+    margin-left: 2px;
     padding-left: 10px;
-    border-left: 13px solid #D9416F;
+    border-left: 7px solid #EAE8EB;
+}
+
+/* FEATURES */
+#features {
+    background-color: #333;
+    padding-top: 20px;
 }
 
 /* GLYPHS */
 #glyphs {
-    background-color: #333;
     padding-top: 20px;
+    background-color: #333;
+}
+
+#glyph_rows {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 0px;
+    column-gap: 20px;
+    padding: 0 40px;
+    margin-bottom: 20px;
+}
+
+.glyph_box {
+    color: #EAE8EB;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 40px;
+    position: relative;
 }
 
 /* Footer */
@@ -317,3 +441,4 @@ h2 {
     background-color: #000;
     color: #fff;
 }
+  
